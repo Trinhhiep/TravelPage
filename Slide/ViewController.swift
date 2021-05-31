@@ -82,7 +82,7 @@ class ViewController: UIViewController  {
         btn.backgroundColor = bGColor
         btn.setTitle(text, for: UIControl.State.normal)
         btn.setTitleColor(textColor, for: UIControl.State.normal)
-       
+        btn.layer.cornerRadius = radius
         btn.sizeToFit()
         btn.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         btn.titleLabel?.font = UILabel().font.withSize(size)
